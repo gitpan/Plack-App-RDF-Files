@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Plack/App/RDF/Files.pm
+t/basic.t
+t/data/alice/file1.ttl
+t/data/empty/empty/keep.txt
