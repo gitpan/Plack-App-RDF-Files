@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Plack-App-RDF-Files,
-version 0.01:
+version 0.02:
 
-  Serve RDF data from static files
+  Serve RDF data from files
 
 This software is copyright (c) 2013 by Jakob Voß.
 

@@ -2,14 +2,14 @@
 use strict;
 use warnings;
 
-use 5.014000;
+use 5.014001;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Serve RDF data from static files",
+  "ABSTRACT" => "Serve RDF data from files",
   "AUTHOR" => "Jakob Vo\303\237 <voss\@gbv.de>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -20,8 +20,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Plack::App::RDF::Files",
   "PREREQ_PM" => {
+    "Carp" => 0,
+    "Digest::MD5" => 0,
     "Encode" => 0,
     "File::Spec::Functions" => 0,
+    "HTTP::Date" => 0,
+    "List::Util" => 0,
     "Plack::Component" => 0,
     "Plack::Request" => 0,
     "Plack::Util::Accessor" => 0,
@@ -30,17 +34,19 @@ my %WriteMakefileArgs = (
     "RDF::Trine::Model" => 0,
     "RDF::Trine::Parser" => 0,
     "RDF::Trine::Serializer" => 0,
+    "Scalar::Util" => 0,
     "URI" => 0,
     "parent" => 0
   },
   "TEST_REQUIRES" => {
+    "HTTP::Message::PSGI" => 0,
+    "HTTP::Request" => 0,
     "HTTP::Request::Common" => 0,
     "Plack::Builder" => 0,
     "Plack::Test" => 0,
-    "Test::More" => 0,
-    "strict" => 0
+    "Test::More" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

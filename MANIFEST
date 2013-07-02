@@ -6,4 +6,5 @@ README
 lib/Plack/App/RDF/Files.pm
 t/basic.t
 t/data/alice/file1.ttl
-t/data/empty/empty/keep.txt
+t/data/foo/bar/triples.nt
+t/files.t
