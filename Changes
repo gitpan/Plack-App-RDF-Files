@@ -1,0 +1,14 @@
+# Changelog for Plack-App-RDF-Files
+
+0.10  2014-12-10 15:12:08 CET
+    - fix non-streaming Unicode
+    - migrated to Dist::Milla and Moo
+    - major code cleanup and refactoring
+    - add HTTP HEAD and conditional GET
+    - fix feature index_property, remove include_index
+
+0.02  2013-07-02
+    - new method: files
+
+0.01  2013-07-01
+    - initial release

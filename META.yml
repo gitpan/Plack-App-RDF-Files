@@ -1,41 +1,37 @@
 ---
-abstract: 'Serve RDF data from files'
+abstract: 'serve RDF data from files'
 author:
-  - 'Jakob Voß <voss@gbv.de>'
+  - 'Jakob Voß'
 build_requires:
-  HTTP::Message::PSGI: 0
-  HTTP::Request: 0
-  HTTP::Request::Common: 0
-  Plack::Builder: 0
-  Plack::Test: 0
-  Test::More: 0
-  perl: v5.14.1
+  HTTP::Request::Common: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build::Tiny: '0.039'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131560'
+generated_by: 'Dist::Milla version v1.0.8, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.141520'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Plack-App-RDF-Files
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
 requires:
-  Carp: 0
-  Digest::MD5: 0
-  Encode: 0
-  File::Spec::Functions: 0
-  HTTP::Date: 0
-  List::Util: 0
-  Plack::Component: 0
-  Plack::Request: 0
-  Plack::Util::Accessor: 0
-  RDF::Trine: 0
-  RDF::Trine::Iterator::Graph: 0
-  RDF::Trine::Model: 0
-  RDF::Trine::Parser: 0
-  RDF::Trine::Serializer: 0
-  Scalar::Util: 0
-  URI: 0
-  parent: 0
-  perl: v5.14.1
-version: 0.02
+  HTTP::Date: '0'
+  Moo: '0'
+  Plack: '0'
+  RDF::Trine: '0'
+  perl: v5.10.0
+resources:
+  bugtracker: https://github.com/nichtich/Plack-App-RDF-Files/issues
+  homepage: https://github.com/nichtich/Plack-App-RDF-Files
+  repository: https://github.com/nichtich/Plack-App-RDF-Files.git
+version: '0.10'
+x_contributors:
+  - 'Jakob Voss <jakob@nichtich.de>'
+  - 'Jakob Voss <voss@gbv.de>'
