@@ -1,5 +1,9 @@
 # Changelog for Plack-App-RDF-Files
 
+0.11  2014-12-12 12:02:37 CET
+    - improved serialization, especially for Unicode characters
+    - added 'app' function to simplify one-liners
+
 0.10  2014-12-10 15:12:08 CET
     - fix non-streaming Unicode
     - migrated to Dist::Milla and Moo
